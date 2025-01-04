@@ -23,7 +23,7 @@ for 2♣️ (Deuce of Clubs), 10♠️ (Ten of Spades), 4♦️ (Four of Diamond
 Optionally specify the dead cards (the cards that are no longer in the deck) as space 
 seperated card aliases, e.g. `-d Tc 2c` for 10♣️ (Ten of Clubs) and 2♣️ (Deuce of Clubs).
 
-```
+```bash
 ./joker -h
 Usage: joker [-ehV] [-b=<card>]... [-d=<card>]... (<card> <card>)...
       (<card> <card>)...   Player cards (2 cards per player, 2 to 10 players).
@@ -35,7 +35,7 @@ Usage: joker [-ehV] [-b=<card>]... [-d=<card>]... (<card> <card>)...
 ```
 
 Also, you can use the `-e` flag to display emojis for suits instead of letters.
-```
+```bash
 ./joker Jh 9s Ac 2d -e
           Win     Tie
 J♥️9♠️:  43.82%   0.43%
@@ -50,7 +50,7 @@ player 3 has 7♣️ (Seven of Clubs) and 7♦️ (Seven of Diamonds)
 and the board is 3♦️ (Three of Diamonds), 5♣️ (Five of Clubs) and K♣️ (King of Clubs).  
 The scenario is represented as follows: `Ah Kh Qc Qd 7c 7d -b 3d 5c Kc`  
 
-```
+```bash
 ./joker Ah Kh Qc Qd 7c 7d -b 3d 5c Kc
         Win     Tie
 AhKh:  76.41%   0.00%
@@ -64,7 +64,7 @@ player 3 has 7♦️ (Seven of Diamonds) and K♦️ (King of Diamonds)
 and the dead cards are K♥️ (King of Hearts) and 2♣️ (Deuce of Clubs).  
 The scenario is represented as follows: `Ac 8s 5c 8h 7d Kd -d Kh 2c`
 
-```
+```bash
 ./joker Ac 8s 5c 8h 7d Kd -d Kh 2c
         Win     Tie
 Ac8s:  45.69%   2.22%
