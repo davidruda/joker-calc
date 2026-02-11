@@ -27,6 +27,7 @@ jobs:
       contents: write
     steps:
       - name: Deploy JavaDoc 🚀
+        if: ${{ !env.ACT }} # Don't deploy if testing locally with `act`
         uses: MathieuSoysal/Javadoc-publisher.yml@v3.0.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
